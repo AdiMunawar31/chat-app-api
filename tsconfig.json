@@ -7,7 +7,7 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "./dist",
-    "rootDir": "./"
+    "rootDir": "./api"
   },
   "include": ["api/**/*", "api/index.ts"],
   "exclude": ["node_modules"]
