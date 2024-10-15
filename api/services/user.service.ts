@@ -15,12 +15,6 @@ export const createOrUpdateUser = async (
   return await newUser.save();
 };
 
-export const findUserBySocketId = async (
-  socketId: string,
-): Promise<IUser | null> => {
-  return await User.findOne({ socketId });
-};
-
 export const deleteUserBySocketId = async (socketId: string): Promise<void> => {
   await User.deleteOne({ socketId });
 };
